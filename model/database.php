@@ -3,8 +3,9 @@ class Database
 {
     public static function Conectar()
     {
-        $pdo = new PDO('mysql:host=localhost;dbname=bdd;charset=utf8', 'user', 'pass');
+        $pdo = new PDO('appmvcphp-mysqldbserver.mysql.database.azure.com;dbname=mysampledb;charset=utf8', 'zlamg@appmvcphp-mysqldbserver', 'Mauriy11');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
         return $pdo;
     }
 }
+
